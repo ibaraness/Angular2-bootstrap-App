@@ -7,7 +7,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4" *ngFor="let story of stories">
+    <div *ngFor="let story of stories" class="col-sm-4">
+      <!--[ Inject each story from our list to the story component ]-->
       <app-story [story]="story"></app-story>
     </div>
   </div>
@@ -23,10 +24,10 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <!--TODO: Add ngFor for the products -->
       <div class="row">
         <div *ngFor="let product of products" class="col-sm-3">
-          <app-product  [product]="product"></app-product>
+          <!--[ Inject each product from our list to the product component ]-->
+          <app-product [product]="product"></app-product>
         </div>
       </div>
     </div>
@@ -43,7 +44,7 @@
 
   <div class="row rowSpacer"></div>
 
-  <!--[NEW TOPICS START]-->
+  <!--[OTHER TOPICS START]-->
   <div class="row">
     <div class="col-sm-12">
       <h1>Other Topics</h1>
@@ -51,16 +52,13 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <!--TODO: Add ngFor for the products -->
       <div class="row">
-        <div class="col-sm-2"><app-story></app-story></div>
-        <div class="col-sm-2"><app-story></app-story></div>
-        <div class="col-sm-2"><app-story></app-story></div>
-        <div class="col-sm-2"><app-story></app-story></div>
-        <div class="col-sm-2"><app-story></app-story></div>
-        <div class="col-sm-2"><app-story></app-story></div>
+        <div *ngFor="let otherStory of otherStories" class="col-sm-2">
+          <!--[ Inject each story from our list to the story component ]-->
+          <app-story [story]="otherStory"></app-story>
+        </div>
       </div>
     </div>
   </div>
-  <!--[NEW TOPICS START]-->
+  <!--[OTHER TOPICS END]-->
 </div>

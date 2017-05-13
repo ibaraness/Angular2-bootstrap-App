@@ -2,7 +2,7 @@ import { IStoryTeaser } from "app/shared/story/story.component";
 import { IProduct } from "app/shared/product/product.component";
 
 /**
- * A list of story teasers model objects
+ * A list of story model objects
  */
 export const STORIES: IStoryTeaser[] = [
     {
@@ -64,5 +64,47 @@ export const PRODUCTS: IProduct[] = [
       imageURL: '/assets/images/img7.jpg',
       rating:3,
       reviews:12
+    }
+  ];
+
+/**
+ * Another list of story model objects, we will use it on our 'other topics' section
+ */
+export const OTHER_STORIES: IStoryTeaser[] = [
+    {
+      id:1,
+      title:'Buiding Bootstrap site in a weekend',
+      content:'Today story talks about blah... blah...',
+      imageURL:'/assets/images/img1.jpg'
+    },
+    {
+      id:2,
+      title:'Buiding Angular2 app',
+      content:'Today story talks about blah... blah...',
+      imageURL:'/assets/images/img2.jpg'
+    },
+    {
+      id:3,
+      title:'Buiding Angular2 app',
+      content:'Today story talks about blah... blah...',
+      imageURL:'/assets/images/img3.jpg'
+    },
+    {
+      id:4,
+      title:'Buiding Bootstrap site in a weekend',
+      content:'Today story talks about blah... blah...',
+      imageURL:'/assets/images/img4.jpg'
+    },
+    {
+      id:5,
+      title:'Buiding Angular2 app',
+      content:'Today story talks about blah... blah...',
+      imageURL:'/assets/images/img5.jpg'
+    },
+    {
+      id:6,
+      title:'Buiding Angular2 app',
+      content:'Today story talks about blah... blah...',
+      imageURL:'/assets/images/img6.jpg'
     }
   ];
