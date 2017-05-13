@@ -1,0 +1,16 @@
+<!--<div class="col-sm-3">-->
+  <div class="cube" [ngStyle]="{'background': 'url(' + product.imageURL + ') center no-repeat'}"></div>
+  <div>
+    <h4 [innerHTML]="product.description"></h4>
+    <div class="reviews">
+
+      <span *ngFor="let rating of ratings" class="glyphicon review-star" aria-hidden="true"
+      [ngClass]="{
+        'glyphicon-star':(rating === 1),
+        'glyphicon-star-empty':(rating === 0),
+        'glyphicon-star-half':(rating === 0.5)
+        }"></span>
+      <span class="review-description">{{product.reviews}} reviews</span>
+    </div>
+  </div>
+<!--</div>-->

@@ -1,0 +1,66 @@
+<div class="container">
+ 
+ <!--[STORIES START]-->
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>New Topics</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let story of stories">
+      <app-story [story]="story"></app-story>
+    </div>
+  </div>
+  <!--[STORIES END]-->
+
+  <div class="row rowSpacer"></div>
+
+  <!--[NEW PRODUCTS START]-->
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>New Producs</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <!--TODO: Add ngFor for the products -->
+      <div class="row">
+        <div *ngFor="let product of products" class="col-sm-3">
+          <app-product  [product]="product"></app-product>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--[NEW PRODUCTS END]-->
+
+  <div class="row rowSpacer"></div>
+
+  <!--[TEASER START]-->
+  <div class="row">
+    <app-teaser></app-teaser>
+  </div>
+  <!--[TEASER END]-->
+
+  <div class="row rowSpacer"></div>
+
+  <!--[NEW TOPICS START]-->
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Other Topics</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <!--TODO: Add ngFor for the products -->
+      <div class="row">
+        <div class="col-sm-2"><app-story></app-story></div>
+        <div class="col-sm-2"><app-story></app-story></div>
+        <div class="col-sm-2"><app-story></app-story></div>
+        <div class="col-sm-2"><app-story></app-story></div>
+        <div class="col-sm-2"><app-story></app-story></div>
+        <div class="col-sm-2"><app-story></app-story></div>
+      </div>
+    </div>
+  </div>
+  <!--[NEW TOPICS START]-->
+</div>
