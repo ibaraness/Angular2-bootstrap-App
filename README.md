@@ -1,6 +1,8 @@
 # SocialApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+This is a basic example of a an Angular 2 + Bootstrap3 app. I've build this project using Angular CLI, which I highly recommend. The Angular CLI lets you build Angular components, modules and services very fast and very efficiently.
+
+As discused above, this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
 ## Development server
 
