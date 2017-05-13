@@ -11,6 +11,8 @@ import { TeaserComponent } from './shared/teaser/teaser.component';
 import { StoryPageComponent } from './pages/story-page/story-page.component';
 import { RoutingModule } from "app/core/routing/routing.module";
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { StoryDataService } from "app/shared/story-data/story-data.service";
+import { StoryResolveService } from "app/shared/story-resolve/story-resolve.service";
 
 @NgModule({
   declarations: [
@@ -26,9 +28,12 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     BrowserModule,
     FormsModule,
     HttpModule,
-    RoutingModule
+    RoutingModule 
   ],
-  providers: [],
+  providers: [
+    StoryDataService,
+    StoryResolveService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

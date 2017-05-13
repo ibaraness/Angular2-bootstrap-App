@@ -1,3 +1,21 @@
-<p>
-  story-page works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>{{story?.title}}</h1>
+      <h3>{{story?.subtitle}}</h3>
+      <hr>
+      <!--[MAIN CONTENT START]-->
+      <div [innerHTML]="story?.content"></div>
+      <!--[MAIN CONTENT END]-->
+    </div>
+    <div class="col-sm-4">
+      <!--[STORY PICTURE START]-->
+      <figure>
+        <img src="{{story?.imageURL}}" alt="" [ngStyle]="{'width':'100%'}">
+        <figcaption>Image caption</figcaption>
+      </figure>
+      <!--[STORY PICTURE START]-->
+    </div>
+  </div>
+  <div class="row rowSpacer"></div>
+</div>

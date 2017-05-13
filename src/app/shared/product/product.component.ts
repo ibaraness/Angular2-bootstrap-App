@@ -33,7 +33,6 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
     this.prepareRatings();
-    console.log('ratings', this.ratings);
   }
 
   /**

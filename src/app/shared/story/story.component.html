@@ -1,4 +1,6 @@
 
-    <div class="story-image" [ngStyle]="{'background': 'url(' + story.imageURL + ') center no-repeat'}"></div>
-    <h4 class="story_short_title">{{story.title}}</h4>
-    <p class="story_short">{{story.content}}</p>
+    <a routerLink="/story/{{story?.id}}">
+    <div class="story-image" [ngStyle]="{'background': 'url(' + story?.imageURL + ') center no-repeat'}"></div>
+    <h4 class="story_short_title">{{story?.title}}</h4>
+    <p class="story_short">{{story?.subtitle}}</p>
+    </a>

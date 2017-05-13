@@ -1,12 +1,20 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-export interface IStoryTeaser {
+/**
+ * Story model interface
+ */
+export interface IStory {
   id: number;
   title: string;
+  subtitle: string;
   content: string;
   imageURL: string;
 }
 
+/**
+ * Stateless story component.
+ * It gets all it's data (IStory object) from the parnet.
+ */
 @Component({
   selector: 'app-story',
   templateUrl: './story.component.html',
@@ -14,12 +22,10 @@ export interface IStoryTeaser {
 })
 export class StoryComponent implements OnInit {
 
-  @Input() private story: IStoryTeaser = {
-    id:1,
-    title:'Buiding Bootstrap site in a weekend',
-    content:'Today story talks about blah... blah...',
-    imageURL:'/assets/images/img3.jpg'
-  }
+  /**
+   * Allowing the parent to inject data to the component (Using the @Input decorator)
+   */
+  @Input() private story: IStory;
 
   constructor() { }
 
