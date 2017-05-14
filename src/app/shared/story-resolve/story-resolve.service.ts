@@ -5,7 +5,7 @@ import { StoryDataService } from "app/shared/story-data/story-data.service";
 import 'rxjs/add/operator/first'
 
 /**
- * Returns a IStory object using the 'id' param of the route
+ * Returns an IStory object using the 'id' param of the route
  */
 @Injectable()
 export class StoryResolveService implements Resolve<any> {

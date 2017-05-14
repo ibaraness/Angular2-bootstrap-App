@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <!--[PRODUCT PICTURE START]-->
+      <figure>
+        <img src="{{product?.imageURL}}" alt="" [ngStyle]="{'width':'100%'}">
+        <figcaption>Image caption</figcaption>
+      </figure>
+      <!--[PRODUCT PICTURE START]-->
+    </div>
+    <div class="col-sm-4">
+      <h1>{{product?.title}}</h1>
+      <h3 [innerHTML]="product?.description"></h3>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Add to cart</p>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-default btn-block">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+          </button>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="row rowSpacer"></div>
+</div>

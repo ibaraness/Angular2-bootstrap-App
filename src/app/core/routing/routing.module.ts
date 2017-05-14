@@ -4,6 +4,8 @@ import { HomepageComponent } from "app/pages/homepage/homepage.component";
 import { StoryPageComponent } from "app/pages/story-page/story-page.component";
 import { PageNotFoundComponent } from "app/pages/page-not-found/page-not-found.component";
 import { StoryResolveService } from "app/shared/story-resolve/story-resolve.service";
+import { ProductPageComponent } from "app/pages/product-page/product-page.component";
+import { ProductResolveService } from "app/shared/product-resolve/product-resolve.service";
 
 const appRoutes: Routes = [
   { path:'', redirectTo: '/homepage', pathMatch: 'full'},
@@ -11,8 +13,15 @@ const appRoutes: Routes = [
   { 
     path: 'story/:id', 
     component: StoryPageComponent,
-    resolve:{
+    resolve:{ //...Show the page only when data is available 
       story: StoryResolveService
+    } 
+  },
+  { 
+    path: 'product/:id', 
+    component: ProductPageComponent,
+    resolve:{ //...Show the page only when data is available 
+      product: ProductResolveService
     } 
   },
   { path: '**', component: PageNotFoundComponent }

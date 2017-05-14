@@ -13,6 +13,9 @@ import { RoutingModule } from "app/core/routing/routing.module";
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { StoryDataService } from "app/shared/story-data/story-data.service";
 import { StoryResolveService } from "app/shared/story-resolve/story-resolve.service";
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductDataService } from "app/shared/product-data/product-data.service";
+import { ProductResolveService } from "app/shared/product-resolve/product-resolve.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { StoryResolveService } from "app/shared/story-resolve/story-resolve.serv
     StoryComponent,
     TeaserComponent,
     StoryPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { StoryResolveService } from "app/shared/story-resolve/story-resolve.serv
   ],
   providers: [
     StoryDataService,
-    StoryResolveService
+    StoryResolveService,
+    ProductDataService,
+    ProductResolveService
   ],
   bootstrap: [AppComponent]
 })
