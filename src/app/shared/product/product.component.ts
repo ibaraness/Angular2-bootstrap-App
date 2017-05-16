@@ -8,6 +8,7 @@ export interface IProduct {
   imageURL: string;
   rating: number; //0 out of 5 (halfs allowd, for example 3.5)
   reviews: number;
+  additionalInfo?: string;
 }
 
 @Component({

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IStory } from "app/shared/story/story.component";
 
 @Component({
   selector: 'app-teaser',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeaserComponent implements OnInit {
 
+  @Input('story') private story: IStory;
   constructor() { }
 
   ngOnInit() {

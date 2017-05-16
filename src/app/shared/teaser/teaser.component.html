@@ -1,8 +1,14 @@
 <div class="col-sm-5">
-    <h2 class="teaser_title">Best Trip ever...</h2>
-    <p class="teaser-text">You might think that Amsterdam is hollands best place to vesit, you can't be more wrong!</p>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <h2 class="teaser_title">{{story?.title}}</h2>
+    <p class="teaser-text">{{story?.subtitle}}</p>
+    <button routerLink="/story/{{story?.id}}" type="button" class="btn btn-primary">Read it now!</button>
+    <hr>
+    <div [innerHTML]="story?.teaserText"></div>
 </div>
 <div class="col-sm-7">
-  <div class="cube"></div>
+  <div class="story-image" 
+    [ngStyle]="{
+        'background': 'url(' + story?.imageURL + ') center no-repeat',
+        'background-size' : 'cover'
+        }"></div>
 </div>

@@ -16,6 +16,7 @@ import { StoryResolveService } from "app/shared/story-resolve/story-resolve.serv
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductDataService } from "app/shared/product-data/product-data.service";
 import { ProductResolveService } from "app/shared/product-resolve/product-resolve.service";
+import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductResolveService } from "app/shared/product-resolve/product-resolv
     TeaserComponent,
     StoryPageComponent,
     PageNotFoundComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

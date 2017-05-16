@@ -31,7 +31,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img1.jpg'
+      imageURL:'/assets/images/img1.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:2,
@@ -59,7 +63,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img2.jpg'
+      imageURL:'/assets/images/img2.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:3,
@@ -87,7 +95,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img3.jpg'
+      imageURL:'/assets/images/img3.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:4,
@@ -115,7 +127,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img1.jpg'
+      imageURL:'/assets/images/img1.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:5,
@@ -143,7 +159,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img2.jpg'
+      imageURL:'/assets/images/img2.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:6,
@@ -171,7 +191,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img3.jpg'
+      imageURL:'/assets/images/img3.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:7,
@@ -199,7 +223,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img4.jpg'
+      imageURL:'/assets/images/img4.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:8,
@@ -227,7 +255,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img5.jpg'
+      imageURL:'/assets/images/img5.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     },
     {
       id:9,
@@ -255,7 +287,11 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img8.jpg'
+      imageURL:'/assets/images/img8.jpg',
+      teaserText: `<p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
+    </p>
+      `
     }
   ];
 
@@ -270,7 +306,18 @@ export const PRODUCTS: IProduct[] = [
       price: 1.99,
       imageURL: '/assets/images/img4.jpg',
       rating:3,
-      reviews:5
+      reviews:5,
+      additionalInfo: `<p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Ut in enim quis nisl cursus bibendum.</li>
+            <li>Aliquam imperdiet pellentesque risus, non efficitur nunc.</li>
+            <li>Donec sed molestie mi.</li>
+          </ul>
+          <p>
+            Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi.
+          </p>`
     },
     {
       id:2,
@@ -288,7 +335,18 @@ export const PRODUCTS: IProduct[] = [
       price: 1.99,
       imageURL: '/assets/images/img6.jpg',
       rating:1.5,
-      reviews:3
+      reviews:3,
+      additionalInfo: `<p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Ut in enim quis nisl cursus bibendum.</li>
+            <li>Aliquam imperdiet pellentesque risus, non efficitur nunc.</li>
+            <li>Donec sed molestie mi.</li>
+          </ul>
+          <p>
+            Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi.
+          </p>`
     },
     {
       id:4,
@@ -297,54 +355,17 @@ export const PRODUCTS: IProduct[] = [
       price: 1.99,
       imageURL: '/assets/images/img7.jpg',
       rating:3,
-      reviews:12
-    }
-  ];
-
-/**
- * Another list of story model objects, we will use it on our 'other topics' section
- */
-export const OTHER_STORIES: IStory[] = [
-    {
-      id:1,
-      title:'Buiding Bootstrap site in a weekend',
-      subtitle:'Today story talks about blah... blah...',
-      content:'Today story talks about blah... blah...',
-      imageURL:'/assets/images/img1.jpg'
-    },
-    {
-      id:2,
-      title:'Buiding Angular2 app',
-      subtitle:'Today story talks about blah... blah...',
-      content:'Today story talks about blah... blah...',
-      imageURL:'/assets/images/img2.jpg'
-    },
-    {
-      id:3,
-      title:'Buiding Angular2 app',
-      subtitle:'Today story talks about blah... blah...',
-      content:'Today story talks about blah... blah...',
-      imageURL:'/assets/images/img3.jpg'
-    },
-    {
-      id:4,
-      title:'Buiding Bootstrap site in a weekend',
-      subtitle:'Today story talks about blah... blah...',
-      content:'Today story talks about blah... blah...',
-      imageURL:'/assets/images/img4.jpg'
-    },
-    {
-      id:5,
-      title:'Buiding Angular2 app',
-      subtitle:'Today story talks about blah... blah...',
-      content:'Today story talks about blah... blah...',
-      imageURL:'/assets/images/img5.jpg'
-    },
-    {
-      id:6,
-      title:'Buiding Angular2 app',
-      subtitle:'Today story talks about blah... blah...',
-      content:'Today story talks about blah... blah...',
-      imageURL:'/assets/images/img6.jpg'
+      reviews:12,
+      additionalInfo: `<p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Ut in enim quis nisl cursus bibendum.</li>
+            <li>Aliquam imperdiet pellentesque risus, non efficitur nunc.</li>
+            <li>Donec sed molestie mi.</li>
+          </ul>
+          <p>
+            Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi.
+          </p>`
     }
   ];

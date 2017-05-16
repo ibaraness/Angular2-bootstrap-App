@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IStory } from "app/shared/story/story.component";
-import { PRODUCTS, STORIES, OTHER_STORIES } from "app/data/fake-data";
+import { PRODUCTS, STORIES } from "app/data/fake-data";
 import { Observable } from "rxjs/Observable";
 
 

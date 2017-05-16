@@ -9,6 +9,7 @@ export interface IStory {
   subtitle: string;
   content: string;
   imageURL: string;
+  teaserText: string;
 }
 
 /**

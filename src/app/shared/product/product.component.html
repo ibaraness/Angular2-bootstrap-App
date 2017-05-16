@@ -1,9 +1,13 @@
 <a routerLink="/product/{{product?.id}}">
-  <div class="cube" [ngStyle]="{'background': 'url(' + product.imageURL + ') center no-repeat'}"></div>
+  <div class="cube" 
+  [ngStyle]="{
+    'background': 'url(' + product.imageURL + ') center no-repeat', 
+    'background-size' : 'cover'
+    }"></div>
+</a>
   <div>
-    <h4 [innerHTML]="product.description"></h4>
+    <a routerLink="/product/{{product?.id}}"><h4 [innerHTML]="product.description"></h4></a>
     <div class="reviews">
-
       <span *ngFor="let rating of ratings" class="glyphicon review-star" aria-hidden="true"
       [ngClass]="{
         'glyphicon-star':(rating === 1),
@@ -13,4 +17,3 @@
       <span class="review-description">{{product.reviews}} reviews</span>
     </div>
   </div>
-</a>

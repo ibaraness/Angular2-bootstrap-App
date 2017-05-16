@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IStory } from "app/shared/story/story.component";
 import { IProduct } from "app/shared/product/product.component";
-import { STORIES, PRODUCTS, OTHER_STORIES } from "app/data/fake-data";
+import { STORIES, PRODUCTS } from "app/data/fake-data";
 
 @Component({
   selector: 'app-homepage',
@@ -15,6 +15,7 @@ export class HomepageComponent implements OnInit {
   private stories: IStory[] = STORIES.slice(0,3);
   private products: IProduct[] = PRODUCTS;
   private otherStories:IStory[] = STORIES.slice(3);
+  private storyTeaser: IStory = STORIES[0];
 
   constructor() { }
 

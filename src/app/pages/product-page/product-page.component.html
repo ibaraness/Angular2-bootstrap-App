@@ -1,25 +1,49 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8">
-      <!--[PRODUCT PICTURE START]-->
-      <figure>
-        <img src="{{product?.imageURL}}" alt="" [ngStyle]="{'width':'100%'}">
-        <figcaption>Image caption</figcaption>
-      </figure>
-      <!--[PRODUCT PICTURE START]-->
+      <div class="row">
+        <div class="col-sm-12">
+          <!--[PRODUCT PICTURE START]-->
+          <figure>
+            <img src="{{product?.imageURL}}" alt="" [ngStyle]="{'width':'100%'}">
+            <figcaption>Image caption</figcaption>
+          </figure>
+          <!--[PRODUCT PICTURE START]-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <hr>
+          <div class="reviews">
+            <span *ngFor="let rating of ratings" class="glyphicon review-star" aria-hidden="true"
+            [ngClass]="{
+              'glyphicon-star':(rating === 1),
+              'glyphicon-star-empty':(rating === 0),
+              'glyphicon-star-half':(rating === 0.5)
+              }"></span>
+            <span class="review-description">{{product.reviews}} reviews</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-sm-4">
       <h1>{{product?.title}}</h1>
       <h3 [innerHTML]="product?.description"></h3>
       <hr>
       <div class="row">
-        <div class="col-sm-4">
-          <p>Add to cart</p>
+        <div class="col-sm-5">
+          <p class="cart-text">Add to my cart</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-sm-offset-3">
           <button class="btn btn-default btn-block">
             <span class="glyphicon glyphicon-shopping-cart"></span>
           </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <hr>
+          <div [innerHTML]="product?.additionalInfo"></div>
         </div>
       </div>
     </div>  

@@ -19,6 +19,12 @@
 /* Components */
 @import './styles/_components';
 
+/* Story general styles */
+@import './styles/_story';
+
+/* Product general styles */
+@import './styles/_product';
+
 /* General styles */
 body {
     color: $primaryTextColor;
@@ -42,10 +48,4 @@ h2 {
 h3 {
     font-size: 25px;
 }
-.review-star {
-    color: $reviewStarColor;
-    font-size: 18px;
-}
-.review-description {
-    padding: 5px 0;
-}
+
