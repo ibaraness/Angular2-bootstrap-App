@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { REVIEWS } from "app/data/fake-data";
+import { IReview } from "app/shared/models/models";
 
 @Injectable()
 export class ReviewsService {
@@ -6,44 +8,34 @@ export class ReviewsService {
   constructor() { }
 
   /**
-   * In order to display 5 stars (full or empty) next to each product,
-   * we need a 5 items array, where each item in it represent a star (full, half or empty star).
-   * 
-   * This method Takes a number between 0-5, and returns an array of numbers.
-   *  - 1 represents a full star.
-   *  - 0.5 represents an half full (or half empty) star.
-   *  - 0 represents an empty star.
+   * Get the first review of a product if exist
    */
-  public getRatingsStarsArray(ratingNumber: number): number[]{
-    /**
-     * Prepare a 5 items array. our stars container
-     */
-    const stars = new Array(5);
+  public getFirstReview(product_id: number):IReview {
+    return REVIEWS.find(review => (review.productId === product_id));
+  }
 
-    /**
-     * Get a whole number version of the reviews, 
-     * so that later we can extract half value (if exists)
-     */
-    const intRating = Math.floor(ratingNumber);
+  /**
+   * Get all reviews of a product 
+   */
+  public getAll(product_id):IReview[]{
+    return REVIEWS.filter(review => (review.productId === product_id));
+  }
 
-    /**
-     * Get our half star (if exists), by substracting the whole ratings
-     * value from the original one.
-     */
-    let halfs = ratingNumber - intRating;
-
-    /**
-     * Loop through the array and fill it with correct values
-     */
-    for(let i = 0, n = 1; i <= 4; i++, n++){
-      if(n <= intRating){
-        stars[i] = 1
-      } else {
-        stars[i] = halfs;
-        halfs = +0;
-      }
+  /**
+   * Get the average rating for a product
+   */
+  public getAverageRating(product_id):number{
+    let average = 0;
+    const all = this.getAll(product_id);
+    all.forEach(el => {
+      average += el.ratings;
+    });
+    average = average / all.length;
+    const roundAverage = Math.floor(average);
+    if(average > roundAverage){
+      return roundAverage + 0.5;
     }
-    return stars;
+    return average;
   }
 
 }

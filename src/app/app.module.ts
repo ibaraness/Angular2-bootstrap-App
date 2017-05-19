@@ -20,6 +20,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ReviewComponent } from './shared/review/review.component';
 import { ReviewsService } from "app/shared/reviews.service";
+import { ReviewStarsComponent } from './shared/review-stars/review-stars.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ReviewsService } from "app/shared/reviews.service";
     ProductPageComponent,
     HeaderComponent,
     FooterComponent,
-    ReviewComponent
+    ReviewComponent,
+    ReviewStarsComponent
   ],
   imports: [
     BrowserModule,

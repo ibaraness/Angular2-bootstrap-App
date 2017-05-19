@@ -1,3 +1,6 @@
-<p>
-  review works!
-</p>
+<h4 class="review_title">
+  <app-review-stars [ratings]="review?.ratings"></app-review-stars>
+  {{review.title}}
+</h4>
+<span>by <a href="#">Jhon Doe</a> at October 2015</span>
+<blockquote>{{review.content}}</blockquote>

@@ -8,12 +8,7 @@
   <div>
     <a routerLink="/product/{{product?.id}}"><h4 [innerHTML]="product.description"></h4></a>
     <div class="reviews">
-      <span *ngFor="let rating of ratings" class="glyphicon review-star" aria-hidden="true"
-      [ngClass]="{
-        'glyphicon-star':(rating === 1),
-        'glyphicon-star-empty':(rating === 0),
-        'glyphicon-star-half':(rating === 0.5)
-        }"></span>
-      <span class="review-description">{{product.reviews}} reviews</span>
+        <app-review-stars [ratings]="product?.rating"></app-review-stars>
+      <span class="review-description">{{product.reviewCount}} reviews</span>
     </div>
   </div>

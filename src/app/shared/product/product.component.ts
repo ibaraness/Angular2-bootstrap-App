@@ -16,15 +16,9 @@ export class ProductComponent implements OnInit {
 
   private ratings: number[];
 
-  constructor(private reviewService: ReviewsService) { }
+  constructor() { }
 
   ngOnInit() {
-    if(this.product){
-      /**
-       * We are using our ReviewsService.getRatingsStarsArray to
-       * Generate our review stars
-       */
-      this.ratings = this.reviewService.getRatingsStarsArray(this.product.rating);
-    }
+
   }
 }
