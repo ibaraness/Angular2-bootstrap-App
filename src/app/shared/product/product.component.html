@@ -1,7 +1,7 @@
 <a routerLink="/product/{{product?.id}}">
-  <div class="cube" 
+  <div class="product-image" 
   [ngStyle]="{
-    'background': 'url(' + product.imageURL + ') center no-repeat', 
+    'background': 'url(' + product.imageThumbURL + ') center no-repeat', 
     'background-size' : 'cover'
     }"></div>
 </a>

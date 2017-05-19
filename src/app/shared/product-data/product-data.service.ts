@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IProduct } from "app/shared/product/product.component";
+import { IProduct } from "app/shared/models/models";
 import { PRODUCTS } from "app/data/fake-data";
 import { Observable } from "rxjs/Observable";
 

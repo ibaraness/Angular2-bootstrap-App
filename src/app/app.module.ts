@@ -17,6 +17,9 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { ProductDataService } from "app/shared/product-data/product-data.service";
 import { ProductResolveService } from "app/shared/product-resolve/product-resolve.service";
 import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ReviewComponent } from './shared/review/review.component';
+import { ReviewsService } from "app/shared/reviews.service";
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { HeaderComponent } from './shared/header/header.component';
     StoryPageComponent,
     PageNotFoundComponent,
     ProductPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,8 @@ import { HeaderComponent } from './shared/header/header.component';
     StoryDataService,
     StoryResolveService,
     ProductDataService,
-    ProductResolveService
+    ProductResolveService,
+    ReviewsService
   ],
   bootstrap: [AppComponent]
 })

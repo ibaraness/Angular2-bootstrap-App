@@ -12,3 +12,40 @@
     //background: url("/assets/images/img2.jpg") center no-repeat;
     background-size: cover;
 }
+/* Small thumbs height */
+.small-thumb {
+    .story-image {
+        height: 200px !important;
+    }    
+}
+@media(min-width:768px){
+    .story-image {
+        height:300px;
+    }
+    .small-thumb {
+        .story-image {
+            height: 130px !important;
+        }    
+    }
+}
+@media(min-width:992px){
+    .story-image {
+        height:350px;
+    }
+    .small-thumb {
+        .story-image {
+            height: 170px !important;
+        }    
+    }
+}
+@media(min-width:1200px){
+    .story-image {
+        height:400px;
+    }
+    .small-thumb {
+        .story-image {
+            height: 200px !important;
+        }    
+    }
+    
+}

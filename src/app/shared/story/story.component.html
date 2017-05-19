@@ -2,7 +2,7 @@
     <a routerLink="/story/{{story?.id}}">
     <div class="story-image" 
     [ngStyle]="{
-        'background': 'url(' + story?.imageURL + ') center no-repeat',
+        'background': 'url(' + story?.imageThumbURL + ') center no-repeat',
         'background-size' : 'cover'
         }"></div>
     <h4 class="story_short_title">{{story?.title}}</h4>

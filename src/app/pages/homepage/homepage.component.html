@@ -1,6 +1,6 @@
 <div class="container">
  
- <!--[STORIES START]-->
+ <!--[MAIN THREE STORIES START]-->
   <div class="row">
     <div class="col-sm-12">
       <h1>Welcome to my Angular2 App</h1>
@@ -8,14 +8,15 @@
     </div>
   </div>
   <div class="row">
-    <div *ngFor="let story of stories" class="col-sm-4">
+    <div *ngFor="let story of stories" class="col-sm-4 ">
       <!--[ Inject each story from our list to the story component ]-->
       <app-story [story]="story"></app-story>
     </div>
   </div>
-  <!--[STORIES END]-->
+  <!--[MAIN THREE STORIES END]-->
 
-  <div class="row rowSpacer"></div>
+  <div class="row rowSpacer hidden-xs"></div>
+  <hr>
 
   <!--[NEW PRODUCTS START]-->
   <div class="row">
@@ -26,7 +27,7 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="row">
-        <div *ngFor="let product of products" class="col-sm-3">
+        <div *ngFor="let product of products" class="col-xs-6 col-sm-3">
           <!--[ Inject each product from our list to the product component ]-->
           <app-product [product]="product"></app-product>
         </div>
@@ -38,14 +39,14 @@
   <div class="row rowSpacer"></div>
 
   <!--[TEASER START]-->
-  <div class="row">
+  <div class="row hidden-xs">
     <app-teaser [story]="storyTeaser"></app-teaser>
   </div>
   <!--[TEASER END]-->
 
-  <div class="row rowSpacer"></div>
-
-  <!--[OTHER TOPICS START]-->
+  <div class="row rowSpacer hidden-xs"></div>
+  <hr>
+  <!--[OTHER STORIES START]-->
   <div class="row">
     <div class="col-sm-12">
       <h2>Other Topics</h2>
@@ -54,12 +55,12 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="row">
-        <div *ngFor="let otherStory of otherStories" class="col-sm-2">
+        <div *ngFor="let otherStory of otherStories" class="col-sm-2 small-thumb">
           <!--[ Inject each story from our list to the story component ]-->
           <app-story [story]="otherStory"></app-story>
         </div>
       </div>
     </div>
   </div>
-  <!--[OTHER TOPICS END]-->
+  <!--[OTHER STORIES END]-->
 </div>

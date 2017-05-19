@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IStory } from "app/shared/story/story.component";
+import { IStory } from "app/shared/models/models";
 
 @Component({
   selector: 'app-teaser',

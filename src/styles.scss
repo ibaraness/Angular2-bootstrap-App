@@ -10,8 +10,11 @@
 /* Variables */
 @import './styles/_variables';
 
-/* Heade styles */
+/* Header styles */
 @import './styles/_header';
+
+/* Footer styles */
+@import './styles/_footer';
 
 /* Utils */
 @import './styles/_utils';
@@ -26,11 +29,16 @@
 @import './styles/_product';
 
 /* General styles */
+html {
+    min-height: 100%;
+    position: relative;
+}
 body {
     color: $primaryTextColor;
     font-family: 'Advent Pro', Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding-top: 90px;
+    margin-bottom:110px;
 }
 figure {
     margin:0;
@@ -40,6 +48,7 @@ h1 {
     font-family: Magra;
     font-weight: 700;
     color: $secondaryTitleTextColor;
+    margin-top:0;
 }
 h2 {
     font-size: 30px;
@@ -48,4 +57,14 @@ h2 {
 h3 {
     font-size: 25px;
 }
+@media(min-width:768px){
+    body {
+        margin-bottom:260px;
+    }
+}
+@media(min-width:992px){
 
+}
+@media(min-width:1200px){
+
+}

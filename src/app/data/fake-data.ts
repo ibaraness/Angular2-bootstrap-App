@@ -1,5 +1,6 @@
-import { IStory } from "app/shared/story/story.component";
-import { IProduct } from "app/shared/product/product.component";
+import { IStory } from "app/shared/models/models";
+import { IReview } from "app/shared/models/models";
+import { IProduct } from "app/shared/models/models";
 
 /**
  * A list of story model objects
@@ -31,7 +32,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img1.jpg',
+      imageURL:'/assets/images/valentines-day-2057745_1920.jpg',
+      imageThumbURL: '/assets/images/thumbs/valentines-day-2057745_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -63,7 +65,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img2.jpg',
+      imageURL:'/assets/images/chocolate-2224998_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/chocolate-2224998_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -95,7 +98,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img3.jpg',
+      imageURL:'/assets/images/dogs-2222801_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/dogs-2222801_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -127,7 +131,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img1.jpg',
+      imageURL:'/assets/images/drink-1870139_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/drink-1870139_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -159,7 +164,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img2.jpg',
+      imageURL:'/assets/images/frog-2211972_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/frog-2211972_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -191,7 +197,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img3.jpg',
+      imageURL:'/assets/images/meditation-2214532_1280.jpg',
+      imageThumbURL:'/assets/images/thumbs/meditation-2214532_1280.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -223,7 +230,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img4.jpg',
+      imageURL:'/assets/images/monument-2011140_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/monument-2011140_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -255,7 +263,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img5.jpg',
+      imageURL:'/assets/images/mushroom-1766196_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/mushroom-1766196_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -287,7 +296,8 @@ export const STORIES: IStory[] = [
       </div>
       <hr>
       <p>Sed sollicitudin quis turpis quis tempor. Nunc ut ultrices lorem. Curabitur rhoncus vulputate metus ut pellentesque. Nulla facilisi. Mauris pellentesque scelerisque tortor, sit amet pharetra urna mollis eget. Duis ut consequat urna. Suspendisse tincidunt est nisl, id cursus sem cursus eu. Maecenas mollis felis eget quam ullamcorper, eu pulvinar magna egestas. Mauris sed felis volutpat, finibus dui id, fermentum mi. </p>`,
-      imageURL:'/assets/images/img8.jpg',
+      imageURL:'/assets/images/tianjin-2185510_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/tianjin-2185510_1920.jpg',
       teaserText: `<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.
     </p>
@@ -301,12 +311,13 @@ export const STORIES: IStory[] = [
 export const PRODUCTS: IProduct[] = [
     {
       id:1,
-      title:'Picture',
-      description:`This picture is the best, only <strong>$1.99</strong> for a copy`,
+      title:'Kiwi Coctail',
+      description:`A smooth light coctail made from fresh kiwi and seasonal fruits, only <strong>$1.99</strong> for a glass`,
       price: 1.99,
-      imageURL: '/assets/images/img4.jpg',
+      imageURL: '/assets/images/kiwi-coctail-1447939_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/kiwi-coctail-1447939_1920.jpg',
       rating:3,
-      reviews:5,
+      reviewCount:5,
       additionalInfo: `<p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
           <ul>
@@ -321,21 +332,34 @@ export const PRODUCTS: IProduct[] = [
     },
     {
       id:2,
-      title:'Picture',
-      description:`This picture is the best, only <strong>$1.99</strong> for a copy`,
-      price: 1.99,
-      imageURL: '/assets/images/img5.jpg',
+      title:'DSLR Camera',
+      description:`Best camera for this price, only <strong>$599</strong>.`,
+      price: 599,
+      imageURL: '/assets/images/camera-510530_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/camera-510530_1920.jpg',
       rating:5,
-      reviews:1
+      reviewCount:1,
+      additionalInfo: `<p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Ut in enim quis nisl cursus bibendum.</li>
+            <li>Aliquam imperdiet pellentesque risus, non efficitur nunc.</li>
+            <li>Donec sed molestie mi.</li>
+          </ul>
+          <p>
+            Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi.
+          </p>`
     },
     {
       id:3,
-      title:'Picture',
-      description:`This picture is the best, only <strong>$1.99</strong> for a copy`,
-      price: 1.99,
-      imageURL: '/assets/images/img6.jpg',
+      title:'Sunglasses',
+      description:`New Sunglasses, only <strong>$29.99</strong> for a pair`,
+      price: 29.99,
+      imageURL: '/assets/images/glasses-2093214_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/glasses-2093214_1920.jpg',
       rating:1.5,
-      reviews:3,
+      reviewCount:3,
       additionalInfo: `<p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
           <ul>
@@ -350,12 +374,13 @@ export const PRODUCTS: IProduct[] = [
     },
     {
       id:4,
-      title:'Picture',
-      description:`This picture is the best, only <strong>$1.99</strong> for a copy`,
-      price: 1.99,
-      imageURL: '/assets/images/img7.jpg',
+      title:'Shoes',
+      description:`New Stylish blue shoes, only <strong>$35</strong> for a copy`,
+      price: 35,
+      imageURL: '/assets/images/hipster-958805_1920.jpg',
+      imageThumbURL:'/assets/images/thumbs/hipster-958805_1920.jpg',
       rating:3,
-      reviews:12,
+      reviewCount:12,
       additionalInfo: `<p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed molestie mi. Vivamus vel libero porttitor, commodo lectus vel, aliquam metus. Etiam a vestibulum massa, et pharetra tellus. Ut in enim quis nisl cursus bibendum. Donec sit amet mollis orci. Suspendisse potenti. Aliquam imperdiet pellentesque risus, non efficitur nunc.</p>
           <ul>
@@ -369,3 +394,95 @@ export const PRODUCTS: IProduct[] = [
           </p>`
     }
   ];
+
+
+  /**
+   * Product ratings data (IReview objects)
+   */
+  export const REVIEWS: IReview[] = [
+  //Product number 1 reviews
+  {
+    productId:1,
+    title:'Really good product!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 4.5
+  },
+  {
+    productId:1,
+    title:'Pretty good',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor`,
+    ratings: 3.5
+  },
+  {
+    productId:1,
+    title:'Pretty disappointing',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 1
+  },
+
+  //Product number 2 reviews
+  {
+    productId:2,
+    title:'Feels cheap!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 2.5
+  },
+  {
+    productId:2,
+    title:'Bad Service',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor`,
+    ratings: 0
+  },
+
+  //Product number 3 reviews
+  {
+    productId:3,
+    title:'Not for everyone!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 2.5
+  },
+  {
+    productId:3,
+    title:'Amazing!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor`,
+    ratings: 4.5
+  },
+  {
+    productId:3,
+    title:'Pretty great!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 4
+  },
+
+  //Product number 4 reviews
+  {
+    productId:4,
+    title:'Really good product!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 4.5
+  },
+  {
+    productId:4,
+    title:'Pretty good',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor`,
+    ratings: 3.5
+  },
+  {
+    productId:4,
+    title:'Pretty disappointing',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 1
+  },
+  {
+    productId:4,
+    title:'I\'m not pleased',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor`,
+    ratings: 0
+  },
+  {
+    productId:4,
+    title:'This one is the best!',
+    content: `Morbi sollicitudin, dui ut gravida pellentesque, lorem purus vulputate massa, sit amet accumsan felis nulla molestie dolor. Mauris non maximus nisi. Donec mattis lorem nec libero cursus cursus.`,
+    ratings: 5
+  }
+]

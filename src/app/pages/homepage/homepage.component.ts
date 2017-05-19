@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IStory } from "app/shared/story/story.component";
-import { IProduct } from "app/shared/product/product.component";
+import { IStory } from "app/shared/models/models";
+import { IProduct } from "app/shared/models/models";
 import { STORIES, PRODUCTS } from "app/data/fake-data";
 
 @Component({

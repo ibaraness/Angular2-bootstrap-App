@@ -1,16 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-/**
- * Story model interface
- */
-export interface IStory {
-  id: number;
-  title: string;
-  subtitle: string;
-  content: string;
-  imageURL: string;
-  teaserText: string;
-}
+import { IStory } from "app/shared/models/models";
 
 /**
  * Stateless story component.
