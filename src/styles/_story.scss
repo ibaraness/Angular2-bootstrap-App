@@ -18,6 +18,11 @@
         height: 200px !important;
     }    
 }
+.other-stories {
+    .story-image{
+        height:150px;
+    }
+}
 @media(min-width:768px){
     .story-image {
         height:300px;
@@ -26,6 +31,11 @@
         .story-image {
             height: 130px !important;
         }    
+    }
+    .other-stories {
+        .story-image{
+            height:200px;
+        }
     }
 }
 @media(min-width:992px){
@@ -36,6 +46,11 @@
         .story-image {
             height: 170px !important;
         }    
+    }
+    .other-stories {
+        .story-image{
+            height:250px;
+        }
     }
 }
 @media(min-width:1200px){

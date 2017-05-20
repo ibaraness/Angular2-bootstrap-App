@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from "@angular/router";
-import { IStory } from "app/shared/story/story.component";
 import { StoryDataService } from "app/shared/story-data/story-data.service";
 import 'rxjs/add/operator/first'
 

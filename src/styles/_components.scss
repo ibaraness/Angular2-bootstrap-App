@@ -7,3 +7,15 @@ ul.icon-list {
         padding: 10px 0;
     }
 }
+
+.review-star {
+    color: $reviewStarColor;
+}
+
+.promotional-ad {
+    border: 1px solid #566bff;
+    background: #999;
+    .promotional-ad-caption {
+        color:#ffffff;
+    }
+}

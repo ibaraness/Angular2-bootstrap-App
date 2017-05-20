@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { IStory } from "app/shared/story/story.component";
 import { PRODUCTS, STORIES } from "app/data/fake-data";
 import { Observable } from "rxjs/Observable";
+import { IStory } from "app/shared/models/models";
 
 
 /**
@@ -29,6 +29,15 @@ export class StoryDataService {
         //TODO: Navigate to story not found
       }
       
+    });
+  }
+
+  /**
+   * Get all stories
+   */
+  public getAll():Observable<IStory[]>{
+    return new Observable(observer => {
+      observer.next(this.stories);
     });
   }
 }

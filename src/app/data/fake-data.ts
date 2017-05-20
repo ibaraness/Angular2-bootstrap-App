@@ -21,7 +21,7 @@ export const STORIES: IStory[] = [
       <div class="row">
         <div class="col-sm-4">
           <figure>
-        <img src="assets/images/img6.jpg" alt="" class="img-responsive">
+        <img src="/assets/images/thumbs/towel-1838210_1920.jpg" alt="" class="img-responsive">
         <figcaption>Image caption</figcaption>
       </figure>
         </div>

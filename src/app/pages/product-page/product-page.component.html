@@ -27,15 +27,28 @@
     <div class="col-sm-4">
       <h1>{{product?.title}}</h1>
       <h3 [innerHTML]="product?.description"></h3>
-      <app-review-stars [ratings]="product?.rating"></app-review-stars>
+      <app-review-stars size="big" [ratings]="product?.rating"></app-review-stars>
       <hr>
       <div class="row">
-        <div class="col-sm-5">
-          <p class="cart-text">Add to my cart</p>
+        <div class="col-sm-2">
+          <p class="cart-text">Qty</p>
         </div>
-        <div class="col-sm-4 col-sm-offset-3">
+        <div class="col-sm-3">
+          <select class="form-control">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+            <option value="1">5</option>
+            <option value="1">6</option>
+            <option value="1">7</option>
+            <option value="1">8</option>
+          </select>
+        </div>
+        <div class="col-sm-offset-2 col-sm-5">
           <button class="btn btn-default btn-block">
             <span class="glyphicon glyphicon-shopping-cart"></span>
+            Add to my cart
           </button>
         </div>
       </div>

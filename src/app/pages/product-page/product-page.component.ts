@@ -20,20 +20,21 @@ export class ProductPageComponent implements OnInit {
     /**
      * Grab IStory object from resolve
      */
-    this.product = this.route.snapshot.data['product'];
-
-    if(this.product){
+    this.route.data.forEach(data => {
+      this.product = data['product'];
+      
       /**
        * Get 3 first reviews for that specific product
        */
-      this.reviews = this.reviewsService.getAll(this.product.id);
-      if(this.reviews && this.reviews.length > 3){
-        this.reviews = this.reviews.slice(0,3);
+      if(this.product){     
+        this.reviews = this.reviewsService.getAll(this.product.id);
+        if(this.reviews && this.reviews.length > 3){
+          this.reviews = this.reviews.slice(0,3);
+        }
       }
+    })
 
-      let average = this.reviewsService.getAverageRating(this.product.id);
-      console.log("average", average);
-    }
+    
   }
 
 }

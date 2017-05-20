@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router/";
-import { IStory } from "app/shared/story/story.component";
+import { ActivatedRoute, Router, NavigationEnd } from "@angular/router/";
+import { StoryDataService } from "app/shared/story-data/story-data.service";
+import { IStory } from "app/shared/models/models";
 
 /**
  * Stateless story page component.
@@ -14,14 +15,39 @@ import { IStory } from "app/shared/story/story.component";
 export class StoryPageComponent implements OnInit {
 
   private story: IStory;
+  private otherStories: IStory[];
   
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private storyService: StoryDataService) { }
 
   ngOnInit() {
     /**
      * Grab IStory object from resolve
      */
-    this.story = this.route.snapshot.data['story'];
+    this.route.data.forEach(data => {
+      this.story = data['story'];
+      
+      /**
+       * Get other three stories
+       */
+      this.setOtherStories();
+    });
+  }
+
+  /**
+   * Get first 3 stories that are different from the current
+   */
+  private setOtherStories(){
+    this.storyService.getAll().subscribe(data => {
+      let _otherStories = data.filter(story => (story.id !== this.story.id));
+      if(_otherStories.length > 3){
+        this.otherStories = _otherStories.slice(0,3);
+      }else {
+        this.otherStories = _otherStories;
+      }
+    });
   }
 
 }
