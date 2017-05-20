@@ -18,7 +18,13 @@
             <div *ngIf="reviews">
               <div *ngFor="let review of reviews">
                   <app-review [review]="review"></app-review>
-              </div>     
+              </div>
+              <div *ngIf="hasMoreThanThreeReviews && !showingAllReviews" >
+                <button class="btn btn-default" (click)="showAllReviews();" >Show All</button>
+              </div>
+             <div *ngIf="showingAllReviews" >
+                <button class="btn btn-default" (click)="showFirstThreeReviews();" >Show Less</button>
+            </div>
             </div>
           <!--[REVIEW end]-->
         </div>
