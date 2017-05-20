@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from "@angular/router/";
-import { StoryDataService } from "app/shared/story-data/story-data.service";
+import { StoryDataService } from "app/shared/services/story-data/story-data.service";
 import { IStory } from "app/shared/models/models";
 import { pageAnimation } from "app/core/page-animation";
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct, IReview } from "app/shared/models/models";
 import { ActivatedRoute } from "@angular/router";
-import { ReviewsService } from "app/shared/reviews.service";
+import { ReviewsService } from "app/shared/services/reviews-service/reviews.service";
 import { REVIEWS } from "app/data/fake-data";
 
 @Component({

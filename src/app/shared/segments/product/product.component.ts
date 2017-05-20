@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ReviewsService } from "app/shared/reviews.service";
+import { ReviewsService } from "app/shared/services/reviews-service/reviews.service";
 import { IProduct } from "app/shared/models/models";
 
 @Component({

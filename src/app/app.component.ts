@@ -9,6 +9,9 @@ import { NavigationEnd, Router } from "@angular/router";
 export class AppComponent implements OnInit{
   constructor(private router: Router){}
   ngOnInit() {
+        /**
+         * A hack to make the page scroll back up on every route change
+         */
         this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
