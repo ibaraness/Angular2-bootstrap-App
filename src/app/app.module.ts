@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -21,6 +22,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ReviewComponent } from './shared/review/review.component';
 import { ReviewsService } from "app/shared/reviews.service";
 import { ReviewStarsComponent } from './shared/review-stars/review-stars.component';
+import { StoriesPageComponent } from './pages/stories-page/stories-page.component';
+import { StoriesResolveService } from "app/shared/stories-resolve.service";
+
 
 @NgModule({
   declarations: [
@@ -35,20 +39,23 @@ import { ReviewStarsComponent } from './shared/review-stars/review-stars.compone
     HeaderComponent,
     FooterComponent,
     ReviewComponent,
-    ReviewStarsComponent
+    ReviewStarsComponent,
+    StoriesPageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RoutingModule 
+    RoutingModule,
+    BrowserAnimationsModule 
   ],
   providers: [
     StoryDataService,
     StoryResolveService,
     ProductDataService,
     ProductResolveService,
-    ReviewsService
+    ReviewsService,
+    StoriesResolveService
   ],
   bootstrap: [AppComponent]
 })

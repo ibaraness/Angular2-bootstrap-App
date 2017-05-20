@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from "@angular/router/";
 import { StoryDataService } from "app/shared/story-data/story-data.service";
 import { IStory } from "app/shared/models/models";
+import { pageAnimation } from "app/core/page-animation";
+
+
 
 /**
  * Stateless story page component.
@@ -10,7 +13,11 @@ import { IStory } from "app/shared/models/models";
 @Component({
   selector: 'app-story-page',
   templateUrl: './story-page.component.html',
-  styleUrls: ['./story-page.component.scss']
+  styleUrls: ['./story-page.component.scss'],
+  // animations:[pageAnimation()],
+  // host:{
+  //   '[@pageAnimation]':''
+  // }
 })
 export class StoryPageComponent implements OnInit {
 

@@ -12,7 +12,6 @@ export class StoryResolveService implements Resolve<any> {
   constructor(private storyService: StoryDataService) { }
 
   resolve(route: ActivatedRouteSnapshot) {
-
     /**
      * Ensure the router will continue after the first change emit, 
      * and won't wait for the observable to close.

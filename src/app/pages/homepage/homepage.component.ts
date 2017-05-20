@@ -2,11 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { IStory } from "app/shared/models/models";
 import { IProduct } from "app/shared/models/models";
 import { STORIES, PRODUCTS } from "app/data/fake-data";
+import { pageAnimation } from "app/core/page-animation";
+
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  styleUrls: ['./homepage.component.scss'],
+  // animations:[pageAnimation()],
+  // host:{
+  //   '[@pageAnimation]':''
+  // }
 })
 export class HomepageComponent implements OnInit {
   /**
