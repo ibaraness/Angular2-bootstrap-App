@@ -24,30 +24,32 @@ import { ReviewsService } from "app/shared/services/reviews-service/reviews.serv
 import { ReviewStarsComponent } from './shared/segments/review-stars/review-stars.component';
 import { StoriesPageComponent } from './pages/stories-page/stories-page.component';
 import { StoriesResolveService } from "app/shared/services/stories-resolve/stories-resolve.service";
+import { SharedModule } from "app/shared/shared/shared.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    ProductComponent,
-    StoryComponent,
-    TeaserComponent,
+    // ProductComponent,
+    // StoryComponent,
+    // TeaserComponent,
     StoryPageComponent,
     PageNotFoundComponent,
     ProductPageComponent,
     HeaderComponent,
     FooterComponent,
-    ReviewComponent,
-    ReviewStarsComponent,
-    StoriesPageComponent
+    // ReviewComponent,
+    // ReviewStarsComponent,
+    //StoriesPageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RoutingModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [
     StoryDataService,

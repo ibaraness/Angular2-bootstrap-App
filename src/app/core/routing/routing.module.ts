@@ -21,7 +21,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'stories',
-    component: StoriesPageComponent,
+    loadChildren:'app/pages/stories-page/stories-page.module#StoriesPageModule',
     resolve:{ //...Show the page only when data is available
       stories: StoriesResolveService
     }
